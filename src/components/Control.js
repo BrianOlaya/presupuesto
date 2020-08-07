@@ -6,11 +6,11 @@ const Control = ({presupuesto, restante}) => {
     return (
         <Fragment>
             <div className="alert alert-primary">
-                Presupuesto:${presupuesto}
+                Billetera inicial:${(Intl.NumberFormat().format(presupuesto))}  
 
             </div>
             <div className={revisarPrersupuesto( presupuesto, restante)}>
-                Restante:${restante}
+                Me quedan:${(Intl.NumberFormat().format(restante))}    
 
             </div>
         </Fragment>

@@ -46,7 +46,7 @@ const Formulario = ({guardarGasto, guardarCrearGasto}) => {
         onSubmit={agregarGasto}
         >
             <h2>Ingresa tus gastos aquí</h2>
-                {error?  <Error mensaje= "Ambos campos son obligatorios o prespuesto incorrecto"/>  :  null }
+                {error?  <Error mensaje= "Hay campos sin diligencar o la cantidad es incorrecta"/>  :  null }
 
             <div className="campo">
                 <label>Nombre del gasto</label>

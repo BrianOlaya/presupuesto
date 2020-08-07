@@ -34,8 +34,8 @@ const Pregunta = ({guardarPresupuesto, guardarRestante, cambiarMostrar, valor}) 
 
     return (
         <Fragment>
-            <h2>Ingresa tu presupuesto</h2>
-                {error ? <Error mensaje ="El presupuesto es incorrecto" /> : null}
+            <h2>Cuento con:</h2>
+                {error ? <Error mensaje ="El valor es incorrecto" /> : null}
 
             <form
             onSubmit={agregarPresupuesto}
@@ -43,14 +43,14 @@ const Pregunta = ({guardarPresupuesto, guardarRestante, cambiarMostrar, valor}) 
                 <input
                     type="number"
                     className="u-full-width"
-                    placeholder="Ingresa tu presupuesto"
+                    placeholder="En mi billetera tengo: $"
                     onChange={definirPresupuesto}
                 />
 
                 <input
                     type="submit"
                     className="button-primary u-full-width"
-                    value="definir presupuesto"
+                    value="definir cantidad"
                 />
 
 

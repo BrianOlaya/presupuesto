@@ -87,7 +87,7 @@ function App() {
   return (
     <div className="container">
       <header>
-        <h1>Presupuesto</h1>
+        <h1>Mis gastos</h1>
         <div className="contenido-principal contenido">
           {mostrar
             ?
